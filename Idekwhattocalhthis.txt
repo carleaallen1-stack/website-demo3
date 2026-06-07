@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Transforming Technology Into Business Success. We help businesses leverage innovative technology solutions to improve efficiency and drive growth.">
+    <meta name="keywords" content="technology consulting, digital transformation, software development, cloud solutions, cybersecurity, IT support">
+    <meta name="author" content="Tech Solutions Company">
+    <title>Transforming Technology Into Business Success</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0050d4 0%, #7b9cff 100%);
+        }
+
+        .megamenu {
+            display: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.2s ease-out;
+        }
+
+        @media (min-width: 768px) {
+            .group:hover .megamenu {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mobile-menu.hidden-menu {
+            transform: translateX(100%);
+        }
+    </style>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-dim": "#9f0519",
+                        "outline": "#68788f",
+                        "on-tertiary-container": "#4a2c00",
+                        "on-tertiary": "#fff0e3",
+                        "secondary-container": "#d8e3fb",
+                        "on-error": "#ffefee",
+                        "error": "#b31b25",
+                        "surface-bright": "#f4f6ff",
+                        "inverse-on-surface": "#8e9eb7",
+                        "on-error-container": "#570008",
+                        "primary-dim": "#0046bb",
+                        "surface-container-low": "#eaf1ff",
+                        "outline-variant": "#9eaec7",
+                        "on-primary": "#f1f2ff",
+                        "tertiary-dim": "#714600",
+                        "secondary": "#515c70",
+                        "on-surface": "#203044",
+                        "secondary-fixed-dim": "#cad5ed",
+                        "secondary-dim": "#455064",
+                        "on-tertiary-fixed-variant": "#563400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#eff2ff",
+                        "tertiary": "#815100",
+                        "surface-variant": "#c9deff",
+                        "inverse-surface": "#000f21",
+                        "on-primary-fixed-variant": "#00266e",
+                        "on-secondary-fixed-variant": "#515c70",
+                        "primary-container": "#7b9cff",
+                        "on-tertiary-fixed": "#2a1700",
+                        "surface-container-highest": "#c9deff",
+                        "primary-fixed": "#7b9cff",
+                        "on-background": "#203044",
+                        "tertiary-fixed": "#f8a010",
+                        "surface-dim": "#bdd6fc",
+                        "inverse-primary": "#618bff",
+                        "surface": "#f4f6ff",
+                        "surface-tint": "#0050d4",
+                        "secondary-fixed": "#d8e3fb",
+                        "error-container": "#fb5151",
+                        "primary-fixed-dim": "#658eff",
+                        "on-secondary-container": "#475266",
+                        "on-secondary-fixed": "#354053",
+                        "primary": "#0050d4",
+                        "background": "#f4f6ff",
+                        "tertiary-container": "#f8a010",
+                        "surface-container-high": "#d2e4ff",
+                        "on-primary-container": "#001e5a",
+                        "surface-container": "#dce9ff",
+                        "on-primary-fixed": "#000000",
+                        "on-surface-variant": "#4d5d73",
+                        "tertiary-fixed-dim": "#e79400"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased">
+    <header class="w-full border-b border-slate-100 bg-white sticky top-0 z-50">
+        <div class="flex justify-between items-center px-8 h-14">
+            <div class="text-2xl font-black text-slate-900 font-headline cursor-pointer">[Company Name]</div>
+            <nav class="hidden md:flex items-center gap-4 h-full font-plus-jakarta font-semibold">
+                <a href="#" class="text-blue-700 border-b-2 border-blue-700 h-full flex items-center px-4 hover:bg-slate-50 transition-colors">Home</a>
+                <a href="#about" class="text-slate-500 hover:text-primary transition-colors h-full flex items-center px-4">About Us</a>
+                <a href="#services" class="text-slate-500 hover:text-primary transition-colors h-full flex items-center px-4">Services</a>
+                <a href="#process" class="text-slate-500 hover:text-primary transition-colors h-full flex items-center px-4">Our Process</a>
+                <a href="#faq" class="text-slate-500 hover:text-primary transition-colors h-full flex items-center px-4">FAQs</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-block px-4 py-2 bg-primary text-white font-bold text-sm rounded-lg hover:bg-primary-dim transition-colors">Get In Touch</a>
+                <button class="md:hidden text-slate-900 p-2 rounded-lg hover:bg-slate-100 transition-colors" id="menu-toggle">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <div class="fixed inset-0 z-[60] bg-white hidden-menu md:hidden flex flex-col" id="mobile-menu">
+            <div class="flex justify-between items-center px-4 h-14 border-b border-slate-100">
+                <div class="text-2xl font-black text-slate-900 font-headline">[Company Name]</div>
+                <button class="text-slate-900 p-2" id="menu-close">
+                    <span class="material-symbols-outlined text-3xl">close</span>
+                </button>
+            </div>
+            <div class="flex-1 overflow-y-auto py-8 px-6 space-y-8">
+                <nav class="space-y-6 flex flex-col">
+                    <a class="text-2xl font-bold text-primary font-headline" href="#">Home</a>
+                    <a class="text-2xl font-bold text-on-surface font-headline" href="#about">About Us</a>
+                    <a class="text-2xl font-bold text-on-surface font-headline" href="#services">Services</a>
+                    <a class="text-2xl font-bold text-on-surface font-headline" href="#process">Our Process</a>
+                    <a class="text-2xl font-bold text-on-surface font-headline" href="#faq">FAQs</a>
+                    <a class="text-2xl font-bold text-on-surface font-headline" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative overflow-hidden pt-20 pb-32">
+            <div class="absolute inset-0 -z-10 bg-surface-container-low opacity-50"></div>
+            <div class="absolute top-0 right-0 w-1/2 h-full -z-10 opacity-20 blur-3xl hero-gradient rounded-full translate-x-1/2 -translate-y-1/2"></div>
+            <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/20 text-primary-dim rounded-full font-label text-xs font-bold tracking-wider uppercase">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                        Welcome to [Your Company Name]
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-black font-headline text-on-surface leading-[1.1] tracking-tighter">
+                        Transforming Technology Into <span class="text-primary">Business Success</span>
+                    </h1>
+                    <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        We help businesses leverage innovative technology solutions to improve efficiency, drive growth, and stay ahead in a rapidly evolving digital world. Our team combines technical expertise with strategic thinking to deliver solutions that create real business value.
+                    </p>
+                    <div class="flex items-center gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 hero-gradient text-on-primary font-bold rounded-full shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                            Work With Us
+                        </a>
+                        <a href="#services" class="px-8 py-4 text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                            Explore Services <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] -z-10 shadow-2xl shadow-blue-900/5"></div>
+                    <img alt="Technology Business Success" class="rounded-[2rem] shadow-2xl border border-white/50 w-full object-cover aspect-video" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" />
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-surface-container-low" id="about">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                    <div class="space-y-6">
+                        <h2 class="text-4xl font-black font-headline tracking-tighter">About Us</h2>
+                        <p class="text-on-surface-variant text-lg leading-relaxed">
+                            At [Your Company Name], we believe technology should empower organizations, not complicate them. We work closely with businesses of all sizes to understand their challenges and create tailored solutions that support long-term success.
+                        </p>
+                        <p class="text-on-surface-variant text-lg leading-relaxed">
+                            Our experienced team focuses on delivering reliable, forward-thinking technologies that help clients improve operations, enhance customer experiences, and achieve measurable results.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                        <h3 class="text-2xl font-bold font-headline text-primary">Key Highlights</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-3 bg-surface rounded-xl">
+                                <span class="material-symbols-outlined text-primary">star</span>
+                                <span class="font-bold text-sm">Industry Expertise</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-surface rounded-xl">
+                                <span class="material-symbols-outlined text-primary">groups</span>
+                                <span class="font-bold text-sm">Customer-Centric</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-surface rounded-xl">
+                                <span class="material-symbols-outlined text-primary">lightbulb</span>
+                                <span class="font-bold text-sm">Innovative Solutions</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-surface rounded-xl">
+                                <span class="material-symbols-outlined text-primary">support_agent</span>
+                                <span class="font-bold text-sm">Dedicated Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-primary text-white p-8 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-4xl mb-4">flag</span>
+                            <h3 class="text-2xl font-black font-headline mb-4">Our Mission</h3>
+                            <p class="text-blue-100 leading-relaxed">
+                                Our mission is to empower businesses through innovative technology, helping organizations unlock new opportunities, improve performance, and build a sustainable future. We strive to create impactful digital solutions that simplify complexity and drive meaningful transformation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-slate-100 p-8 rounded-2xl">
+                        <span class="material-symbols-outlined text-4xl text-primary mb-4">corporate_fare</span>
+                        <h3 class="text-2xl font-black font-headline mb-4">Our Core Values</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-surface-container text-primary font-bold rounded-lg text-sm">Innovation</span>
+                            <span class="px-4 py-2 bg-surface-container text-primary font-bold rounded-lg text-sm">Integrity</span>
+                            <span class="px-4 py-2 bg-surface-container text-primary font-bold rounded-lg text-sm">Excellence</span>
+                            <span class="px-4 py-2 bg-surface-container text-primary font-bold rounded-lg text-sm">Collaboration</span>
+                            <span class="px-4 py-2 bg-surface-container text-primary font-bold rounded-lg text-sm">Continuous Improvement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-surface" id="services">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-4xl font-black font-headline tracking-tighter">Our Services</h2>
+                    <p class="text-on-surface-variant text-lg">
+                        We offer a comprehensive range of technology services designed to support modern businesses.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">developer_board</span>
+                        <h3 class="text-xl font-bold font-headline">Technology Consulting</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Helping businesses identify opportunities, optimize processes, and develop effective technology strategies.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">code</span>
+                        <h3 class="text-xl font-bold font-headline">Software Development</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Custom-built applications and systems designed to meet specific business objectives.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">cloud</span>
+                        <h3 class="text-xl font-bold font-headline">Cloud Solutions</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Secure, scalable cloud technologies that improve flexibility and operational efficiency.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">security</span>
+                        <h3 class="text-xl font-bold font-headline">Cybersecurity Services</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Protecting critical systems, data, and digital assets from evolving threats.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">support</span>
+                        <h3 class="text-xl font-bold font-headline">IT Support & Maintenance</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Reliable technical support to ensure smooth business operations.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-sm space-y-4 hover:border-primary transition-all">
+                        <span class="p-3 bg-primary/10 text-primary rounded-xl inline-block material-symbols-outlined">sync_alt</span>
+                        <h3 class="text-xl font-bold font-headline">Digital Transformation</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Modernizing processes and systems to help businesses stay competitive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-inverse-surface text-on-primary">
+            <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black font-headline tracking-tighter text-white">Why Partner With Us?</h2>
+                    <p class="text-slate-400 text-lg">
+                        Choosing the right technology partner is critical to achieving your business goals. We pride ourselves on delivering solutions that are both practical and future-ready.
+                    </p>
+                    <div class="border-t border-slate-800 pt-6">
+                        <h4 class="text-xs font-black uppercase tracking-widest text-primary mb-4">Industries We Serve</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Healthcare</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Finance</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Retail</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Manufacturing</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Education</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Professional Services</span>
+                            <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-bold">Startups &amp; Entrepreneurs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Benefits of Working With Us</h3>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex items-start gap-4">
+                            <span class="text-green-400 font-bold">✓</span>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Customized Solutions</h4>
+                                <p class="text-xs text-slate-400 mt-1">We develop strategies and technologies that align with your unique business requirements.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex items-start gap-4">
+                            <span class="text-green-400 font-bold">✓</span>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Experienced Professionals</h4>
+                                <p class="text-xs text-slate-400 mt-1">Our specialists bring extensive knowledge and hands-on experience across multiple industries.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex items-start gap-4">
+                            <span class="text-green-400 font-bold">✓</span>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Reliable Support</h4>
+                                <p class="text-xs text-slate-400 mt-1">We remain committed to your success long after project completion.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex items-start gap-4">
+                            <span class="text-green-400 font-bold">✓</span>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Scalable Technology</h4>
+                                <p class="text-xs text-slate-400 mt-1">Our solutions are designed to grow alongside your business.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex items-start gap-4">
+                            <span class="text-green-400 font-bold">✓</span>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Results-Driven Approach</h4>
+                                <p class="text-xs text-slate-400 mt-1">We focus on delivering measurable outcomes and long-term value.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white" id="process">
+            <div class="max-w-5xl mx-auto px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-4xl font-black font-headline tracking-tighter">Our Process</h2>
+                    <p class="text-on-surface-variant">How we bring your strategic technical roadmap to reality.</p>
+                </div>
+                <div class="grid md:grid-cols-5 gap-6 relative">
+                    <div class="bg-surface p-6 rounded-xl relative">
+                        <div class="text-3xl font-black text-primary/20 mb-2">01</div>
+                        <h4 class="font-bold text-base mb-1">Discovery</h4>
+                        <p class="text-xs text-on-surface-variant">We take time to understand your business, objectives, and challenges.</p>
+                    </div>
+                    <div class="bg-surface p-6 rounded-xl relative">
+                        <div class="text-3xl font-black text-primary/20 mb-2">02</div>
+                        <h4 class="font-bold text-base mb-1">Planning</h4>
+                        <p class="text-xs text-on-surface-variant">Our team develops a tailored strategy and roadmap.</p>
+                    </div>
+                    <div class="bg-surface p-6 rounded-xl relative">
+                        <div class="text-3xl font-black text-primary/20 mb-2">03</div>
+                        <h4 class="font-bold text-base mb-1">Development</h4>
+                        <p class="text-xs text-on-surface-variant">We design and implement solutions using best practices.</p>
+                    </div>
+                    <div class="bg-surface p-6 rounded-xl relative">
+                        <div class="text-3xl font-black text-primary/20 mb-2">04</div>
+                        <h4 class="font-bold text-base mb-1">Deployment</h4>
+                        <p class="text-xs text-on-surface-variant">Solutions are launched with careful testing and QA.</p>
+                    </div>
+                    <div class="bg-surface p-6 rounded-xl relative">
+                        <div class="text-3xl font-black text-primary/20 mb-2">05</div>
+                        <h4 class="font-bold text-base mb-1">Support</h4>
+                        <p class="text-xs text-on-surface-variant">We provide continued assistance to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-5xl mx-auto px-8">
+                <h2 class="text-4xl font-black font-headline tracking-tighter text-center mb-16">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                        <p class="italic text-on-surface-variant text-sm">"Their expertise and dedication helped us modernize our operations and improve efficiency."</p>
+                        <div class="mt-4 font-bold text-xs text-primary">— Health Sector Client</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                        <p class="italic text-on-surface-variant text-sm">"A trusted technology partner that consistently delivers exceptional results."</p>
+                        <div class="mt-4 font-bold text-xs text-primary">— FinTech Systems Manager</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                        <p class="italic text-on-surface-variant text-sm">"Professional, innovative, and committed to our success."</p>
+                        <div class="mt-4 font-bold text-xs text-primary">— E-Commerce Founder</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white" id="faq">
+            <div class="max-w-3xl mx-auto px-8">
+                <h2 class="text-4xl font-black font-headline tracking-tighter text-center mb-12">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-lg mb-2">What industries do you work with?</h4>
+                        <p class="text-on-surface-variant text-sm">We support businesses across multiple industries and tailor solutions to their specific needs.</p>
+                    </div>
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-lg mb-2">Do you offer customized solutions?</h4>
+                        <p class="text-on-surface-variant text-sm">Yes. Every project is designed around the unique goals and requirements of our clients.</p>
+                    </div>
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-lg mb-2">Can you support ongoing projects?</h4>
+                        <p class="text-on-surface-variant text-sm">Absolutely. We provide continuous support, maintenance, and optimization services.</p>
+                    </div>
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-lg mb-2">How do we get started?</h4>
+                        <p class="text-on-surface-variant text-sm">Simply contact our team for an initial consultation and discovery session.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-surface" id="contact">
+            <div class="max-w-5xl mx-auto px-8">
+                <div class="bg-white border border-slate-100 shadow-xl rounded-[2rem] p-8 md:p-12 grid lg:grid-cols-5 gap-12">
+                    <div class="lg:col-span-2 space-y-6">
+                        <h3 class="text-3xl font-black font-headline tracking-tighter">Get In Touch</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Ready to take your business to the next level? We would love to discuss your goals and explore how our technology solutions can support your growth.
+                        </p>
+                        <div class="space-y-4 pt-4 text-sm font-medium">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                                <span>📍 Location: [Your Location]</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">call</span>
+                                <span>📞 Phone: [Your Phone Number]</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <span>✉️ Email: [Your Email Address]</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">language</span>
+                                <span>🌐 Website: [Your Website]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 bg-surface-container-low p-6 md:p-8 rounded-2xl space-y-6">
+                        <h4 class="text-xl font-bold font-headline">Business Hours</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between border-b border-slate-200/60 pb-2">
+                                <span class="text-on-surface-variant">Monday – Friday</span>
+                                <span class="font-bold">9:00 AM – 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between border-b border-slate-200/60 pb-2">
+                                <span class="text-on-surface-variant">Saturday</span>
+                                <span class="font-bold">By Appointment</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-on-surface-variant">Sunday</span>
+                                <span class="text-error font-bold">Closed</span>
+                            </li>
+                        </ul>
+                        <div class="pt-4 border-t border-slate-200">
+                            <h5 class="font-bold text-sm font-headline mb-2">Let's Build the Future Together</h5>
+                            <p class="text-xs text-on-surface-variant">Whether you're looking to modernize your operations, improve efficiency, or launch innovative new solutions, [Your Company Name] is ready to help you achieve your goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-12 bg-surface-container-low border-t border-slate-200/50">
+        <div class="flex flex-col items-center gap-6 px-8">
+            <div class="text-lg font-bold text-slate-900 font-headline">[Your Company Name]</div>
+            <div class="pt-4 border-t border-slate-200 w-full max-w-4xl text-center">
+                <p class="text-on-surface-variant text-xs font-label">
+                    © 2026 [Your Company Name]. All rights reserved. Built using high-performance corporate templates.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden-menu');
+            });
+        }
+
+        if (menuClose && mobileMenu) {
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden-menu');
+            });
+        }
+        
+        // Auto close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden-menu');
+            });
+        });
+    </script>
+</body>
+
+</html>
