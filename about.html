@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetworkOne | About Us</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>NetworkOne | About Corporate Architecture</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms, container-queries"></script>
+    <link href="https://fonts.googleapis.com/css?family=Epilogue:wght@400;700;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
             theme: {
@@ -18,12 +18,10 @@
     </script>
 </head>
 <body class="bg-surface-light font-body text-text-main antialiased flex flex-col min-h-screen">
-
     <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-gray-100 border border-gray-300 rounded flex items-center justify-center text-gray-400 font-bold text-[10px] text-center p-1">LOGO</div>
-                <span class="text-2xl font-black font-headline text-brand-blue">Network<span class="text-brand-green">One</span></span>
+            <a href="index.html" class="flex items-center">
+                <img src="images/NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
             </a>
             <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
                 <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-blue h-full flex items-center px-4">Home</a>
@@ -32,61 +30,95 @@
                 <a href="events.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-blue h-full flex items-center px-4">Events</a>
                 <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-blue h-full flex items-center px-4">Contact</a>
             </nav>
-            <div class="hidden sm:flex items-center gap-4"><a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90">Get In Touch</a></div>
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90">Get In Touch</a>
+            </div>
         </div>
     </header>
-
-    <main class="flex-grow py-16">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-black font-headline text-brand-blue text-center mb-12">About Our Firm</h2>
-            <div class="grid lg:grid-cols-2 gap-12 items-start">
-                <div class="space-y-6 text-gray-600 text-lg">
-                    <p>Since 2014, NetworkOne has served as a premier technology engineering firm, specialized in the architectural deployment of core infrastructure communication topologies.</p>
-                    <p>Our engineering division remains heavily trained on modern shifts, allowing enterprise clients to achieve significant network reliability configurations.</p>
+    <main class="flex-grow">
+        <div class="py-20 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="text-4xl font-black font-headline text-gray-800">Our Corporate Story</h2>
+                    <div class="w-12 h-1 bg-brand-blue rounded"></div>
+                    <p class="text-gray-600 text-base leading-relaxed">Since 2014, NetworkOne has served as a premier Information and Communication Technology (ICT) partner, specializing in the design and deployment of robust voice and data networks throughout the Bahamas[cite: 15]. At the heart of everything we do is a singular mission: We help business leaders maximize their Information & Communication Technology (ICT) investment[cite: 16].</p>
+                    <p class="text-gray-600 text-base leading-relaxed">Our team doesn't just work in the ICT space; we grew up in it[cite: 16, 17]. By blending decades of hands-on local experience with the industry's latest technological shifts, we deliver infrastructure that is as innovative as it is reliable[cite: 17]. We believe that technology should be a catalyst for growth, not a source of frustration, which is why we focus on solutions that are practically suited to the unique demands of your business[cite: 18].</p>
                 </div>
-                <div class="bg-white border-l-4 border-gray-400 p-8 rounded-r-xl shadow-sm">
-                    <h3 class="text-xl font-bold font-headline text-gray-800 mb-2">Corporate Stance</h3>
-                    <p class="text-gray-700 italic">"We process technological complexity into simple, high-performing networks designed to secure operational efficiency milestones."</p>
+                <div class="lg:col-span-5 bg-gray-50 p-8 border border-gray-200 rounded-2xl flex items-center justify-center relative">
+                    <img src="images/12_Years.png" alt="12 Years Core Anniversary Badge" class="w-44 h-auto drop-shadow-md">
                 </div>
             </div>
         </div>
-    </main>
 
+        <div class="py-20 bg-gray-50 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <h3 class="text-2xl font-black font-headline text-center text-gray-800 mb-4">Why Partner With Us?</h3>
+                <p class="text-center text-gray-500 max-w-xl mx-auto text-sm mb-12">We pride ourselves on being more than just a service provider-we are a strategic ally dedicated to ensuring your ICT budget delivers measurable results[cite: 18, 19].</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 border border-gray-200 rounded-xl shadow-sm space-y-3">
+                        <div class="text-gray-400 font-bold text-xs uppercase tracking-wider">Pillar 01</div>
+                        <h4 class="font-bold text-gray-800 text-base">Deep Local Roots</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">As a locally owned and operated firm, we have an intimate understanding of the Bahamian business environment and the connectivity challenges our clients face[cite: 19].</p>
+                    </div>
+                    <div class="bg-white p-6 border border-gray-200 rounded-xl shadow-sm space-y-3">
+                        <div class="text-gray-400 font-bold text-xs uppercase tracking-wider">Pillar 02</div>
+                        <h4 class="font-bold text-gray-800 text-base">Global Standards</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">Our certified technicians are trained to rigorous international standards, ensuring your ICT services meets world-class benchmarks across hardware lines[cite: 19, 20].</p>
+                    </div>
+                    <div class="bg-white p-6 border border-gray-200 rounded-xl shadow-sm space-y-3">
+                        <div class="text-gray-400 font-bold text-xs uppercase tracking-wider">Pillar 03</div>
+                        <h4 class="font-bold text-gray-800 text-base">Integrity-First</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">We are strictly vendor-neutral. To truly help you maximize your investment, we recommend what is right for your business, not what pays the highest margins[cite: 20, 21].</p>
+                    </div>
+                    <div class="bg-white p-6 border border-gray-200 rounded-xl shadow-sm space-y-3">
+                        <div class="text-gray-400 font-bold text-xs uppercase tracking-wider">Pillar 04</div>
+                        <h4 class="font-bold text-gray-800 text-base">Seamless Delivery</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">From initial scoping and design to the final "go-live" and long-term support, we handle the technical heavy lifting so you can focus on leading your company[cite: 21].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6 text-center bg-gray-50 border border-gray-200 rounded-2xl p-10 shadow-sm space-y-4">
+                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest">Our Shared Mission [cite: 22, 336]</h4>
+                <blockquote class="text-xl md:text-2xl font-medium text-gray-700 italic max-w-2xl mx-auto">
+                    "We help business leaders maximize their Information & Communication Technology investment by bridging the gap between world-class innovation and local expertise." [cite: 22]
+                </blockquote>
+            </div>
+        </div>
+    </main>
     <footer class="bg-gray-900 text-gray-400 text-sm border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-gray-800 border border-gray-700 rounded flex items-center justify-center text-gray-500 font-bold text-[9px]">LOGO</div>
-                    <span class="text-white font-headline font-black text-lg">NetworkOne</span>
+                    <img src="images/NetworkOne_LOGO.png" alt="NetworkOne Logo" class="h-7 w-auto brightness-0 invert opacity-70">
                 </div>
-                <p class="text-xs text-gray-400 leading-relaxed">Helping enterprise environments and business leaders manage high-availability system investments.</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Providing high-performance structural systems engineering, reliable telecom design, and multi-tier technology framework auditing across corporate profiles[cite: 23].</p>
             </div>
             <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-700 pl-2">Navigation</h4>
-                <div class="flex flex-col gap-2 text-xs">
-                    <a href="index.html" class="hover:text-white">Home</a>
-                    <a href="about.html" class="hover:text-white">About Us</a>
-                    <a href="services.html" class="hover:text-white">Services</a>
-                    <a href="events.html" class="hover:text-white">Events</a>
-                    <a href="contact.html" class="hover:text-white">Contact</a>
-                </div>
-            </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-700 pl-2">Follow Us</h4>
-                <div class="flex flex-col gap-2 text-xs">
-                    <a href="https://linkedin.com" target="_blank" class="hover:text-white flex items-center gap-1">💼 LinkedIn</a>
-                    <a href="https://www.youtube.com/@networkonetalks5441" target="_blank" class="hover:text-white flex items-center gap-1">📺 YouTube Portal</a>
-                    <a href="https://instagram.com" target="_blank" class="hover:text-white flex items-center gap-1">📸 Instagram</a>
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Navigation Links</h4>
+                <div class="flex flex-col gap-2 text-xs pl-3">
+                    <a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About Corporate</a>
+                    <a href="services.html" class="hover:text-white transition-colors">Engineering Services</a>
+                    <a href="events.html" class="hover:text-white transition-colors">Corporate Events</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact Panel</a>
                 </div>
             </div>
             <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-700 pl-2">Corporate Office</h4>
-                <p class="text-xs text-gray-400">Operations Hub Address Placeholder</p>
-                <p class="text-xs text-gray-500">Contact Switchboard Connectivity Slots</p>
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Follow Us</h4>
+                <div class="flex flex-col gap-2 text-xs pl-3">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white flex items-center gap-2 transition-colors">Corporate LinkedIn [cite: 24]</a>
+                    <a href="https://www.youtube.com/@networkonetalks5441" target="_blank" class="hover:text-white flex items-center gap-2 transition-colors">YouTube Channel [cite: 24]</a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-white flex items-center gap-2 transition-colors">Instagram Network [cite: 24]</a>
+                </div>
             </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 py-6 border-t border-gray-800 text-center text-xs text-gray-500">
-            &copy; 2026 NetworkOne. All Rights Reserved. General Corporate Infrastructure Terms.
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Corporate Office</h4>
+                <p class="text-xs text-gray-500 pl-3 leading-relaxed">0000000<br>0000000<br></div></div>0000000</p>
+        <div class="max-w-7xl mx-auto px-6 py-6 border-t border-gray-800 text-center text-xs text-gray-600">
+            &copy; 2026 NetworkOne. All Rights Reserved. General Corporate Infrastructure Documentation[cite: 25].
         </div>
     </footer>
 </body>
